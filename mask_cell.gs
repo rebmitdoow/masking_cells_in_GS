@@ -32,6 +32,7 @@ function mask_cells(){
 }
 
 function reveal_cells(){
+  var fontcolor = "#ffffff"; //change the value after between "" to change the font color of the selected cells
   var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   var range = ss.getActiveRange();
   var colonne = range.getColumn()
@@ -42,12 +43,12 @@ function reveal_cells(){
 
   if (linestart == lineend){
     var range = ss.getActiveCell();
-    range.setFontColor("#1c4948");
+    range.setFontColor(fontcolor);
   }
   else{
   for (i = linestart ; i < lineend+1 ; i ++){
     let cell = ss.getRange([i],column);
-    cell.setFontColor("#ffffff"); //change the value after between "" to change the font color of the selected cells
+    cell.setFontColor(fontcolor);
   }
   }
 }
