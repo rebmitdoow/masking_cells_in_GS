@@ -47,7 +47,7 @@ function reveal_cells(){
   else{
   for (i = linestart ; i < lineend+1 ; i ++){
     let cell = ss.getRange([i],column);
-    cell.setFontColor("#1c4948");
+    cell.setFontColor("#ffffff"); //change the value after between "" to change the font color of the selected cells
   }
   }
 }
