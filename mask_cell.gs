@@ -1,3 +1,4 @@
+//Creates a new tab in the spreadsheet UI to easily access the function
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('My new tab')
